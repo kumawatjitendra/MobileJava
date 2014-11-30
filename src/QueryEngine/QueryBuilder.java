@@ -4,7 +4,7 @@ public class QueryBuilder {
 	public static String getInsertQuery(String tableName,String[] fields,Object[] values)
 	{
 		String query = "INSERT INTO "+tableName+"("+getfields(fields) +") VALUES ("+getValues(values)+")" ;
-		return null;
+		return query;
 	}
 
 	private static String getValues(Object[] values) {
@@ -22,5 +22,8 @@ public class QueryBuilder {
 		fieldsString += fields[i];
 		return fieldsString;
 	}
-
+	public static String getValueinQuotes(String org)
+	{
+		return "\""+org+"\"";
+	}
 }

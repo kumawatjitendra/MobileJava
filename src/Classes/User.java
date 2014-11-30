@@ -4,6 +4,8 @@ public class User {
 	private  String userId;
 	private String name;
 	private String password;
+	private String mobile;
+	private String city;
 	public String getPassword() {
 		return password;
 	}
@@ -20,7 +22,6 @@ public class User {
 		this.name = name;
 	}
 
-	private String mobile;
 	public String getMobile() {
 		return mobile;
 	}
@@ -28,8 +29,6 @@ public class User {
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
-
-	private String city;
 
 	public String getCity() {
 		return city;
