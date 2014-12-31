@@ -61,6 +61,7 @@ public class LoginService {
 			}
 			if((rs.getRow() !=0) &&((userid.equals(rs.getString("ID") )) && (password.equals(rs.getString("PASSWORD")))))
 			{
+
 				result.setIsResultValid(true);//return true;
 			}
 			else
@@ -141,13 +142,19 @@ public class LoginService {
 		}
 		return false;
 	}
-	public ArrayList<User> getAllUsers()
+	public ArrayList<String> getAllUsers()
 	{
 		ArrayList<User> list = new ArrayList<User>();
 		
 		return null;
 		
 	}
-	
-
+	public User getUserInfo(String userId)
+	{
+		return null;
+	}
+	public ArrayList<String> getAllDestinations() 
+	{
+		return null;
+	}
 }
